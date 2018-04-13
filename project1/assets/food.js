@@ -28,7 +28,7 @@ $.ajax({
        console.log(response)
 
         // Saving the image_original_url property
-          var imageUrl = response.recipes.image_url;
+          var imageUrl = response.recipes.list[0].image_url;
 
           var test = response.recipes
 
