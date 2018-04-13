@@ -22,6 +22,8 @@ $.ajax({
     method: "GET"
   })
 
+  console.log(response)
+
      // After the data from the AJAX request comes back
      .then(function(response) {
 
