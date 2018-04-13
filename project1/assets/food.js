@@ -2,18 +2,20 @@
 //  * pulls information from the form and build the query URL
 //  * @returns {string} URL for NYT API based on form inputs
 //  */
-function buildQueryURL() {
-    // queryURL is the url we'll use to query the API
-    var queryURL = "http://food2fork.com/api/search";
+// function buildQueryURL() {
+//     // queryURL is the url we'll use to query the API
+//     var queryURL = "http://food2fork.com/api/search";
   
-    // add the api key parameter (the one we received when we registered)
-    queryURL += "?key=0e2e87e62bf49881c143d53640d595e9";
+//     // add the api key parameter (the one we received when we registered)
+//     queryURL += "?key=0e2e87e62bf49881c143d53640d595e9";
   
-    // grab text the user typed into the search input, add as parameter to url
-    var searchTerm = $("#breakfast").val().trim();
-    queryURL += "&q=" + searchTerm;
-}  
-var queryURL = buildQueryURL();
+//     // grab text the user typed into the search input, add as parameter to url
+//     var searchTerm = $("#breakfast").val().trim();
+//     queryURL += "&q=" + searchTerm;
+// }  
+// var queryURL = buildQueryURL();
+
+var queryURL = "http://food2fork.com/api/search?key=0e2e87e62bf49881c143d53640d595e9&q=shredded%20chicken";
 
 
 console.log("---------------\nURL: " + queryURL + "\n---------------");
