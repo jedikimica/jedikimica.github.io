@@ -14,7 +14,17 @@ function buildQueryURL() {
     queryURL += "&q=" + searchTerm;
 }  
 var queryURL = buildQueryURL();
-console.log(queryURL)
+
+
+console.log("---------------\nURL: " + queryURL + "\n---------------");
+
+return queryURL;
+
+$("#run-search").on("click", function(event) {
+  // This line allows us to take advantage of the HTML "submit" property
+  // This way we can hit enter on the keyboard and it registers the search
+  // (in addition to clicks). Prevents the page from reloading on form submit.
+  event.preventDefault();
 
 $.ajax({
     
@@ -46,3 +56,4 @@ $.ajax({
           // Prepending the catImage to the images div
           $("#images").prepend(breakfastImage);
         });
+      });
