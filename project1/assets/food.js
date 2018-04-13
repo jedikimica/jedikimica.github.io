@@ -15,7 +15,7 @@
 // }  
 // var queryURL = buildQueryURL();
 
-var queryURL = "https://food2fork.com/api/search?key=0e2e87e62bf49881c143d53640d595e9&q=shredded%20chicken";
+var queryURL = "http://food2fork.com/api/search?key=0e2e87e62bf49881c143d53640d595e9&q=shredded%20chicken";
 
 
 console.log("---------------\nURL: " + queryURL + "\n---------------");
