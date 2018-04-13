@@ -22,13 +22,12 @@ $.ajax({
     method: "GET"
   })
 
-  console.log(response)
 
      // After the data from the AJAX request comes back
      .then(function(response) {
 
         // Saving the image_original_url property
-          var imageUrl = response.recipes.image_url;
+          var imageUrl = response.recipes[0].image_url;
 
           // Creating and storing an image tag
           var breakfastImage = $("<img>");
