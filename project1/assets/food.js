@@ -14,7 +14,7 @@ function buildQueryURL() {
     queryURL += "&q=" + searchTerm;
 }  
 var queryURL = buildQueryURL();
-
+console.log(queryURL)
 
 $.ajax({
     
