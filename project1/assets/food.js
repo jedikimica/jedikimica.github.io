@@ -19,7 +19,8 @@ var queryURL = buildQueryURL();
 $.ajax({
     
     url: queryURL,
-    method: "GET"
+    method: "GET",
+
   })
 
 
@@ -28,7 +29,7 @@ $.ajax({
        console.log(response)
 
         // Saving the image_original_url property
-          var imageUrl = response.recipes.list[0].image_url;
+          var imageUrl = response.recipes[0].image_url;
 
           var test = response.recipes
 
