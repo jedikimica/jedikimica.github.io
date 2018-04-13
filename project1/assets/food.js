@@ -18,7 +18,6 @@ var queryURL = buildQueryURL();
 
 console.log("---------------\nURL: " + queryURL + "\n---------------");
 
-return queryURL;
 
 $("#run-search").on("click", function(event) {
   // This line allows us to take advantage of the HTML "submit" property
