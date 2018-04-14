@@ -40,7 +40,7 @@ $.ajax({
        console.log(response)
 
         // Saving the image_original_url property
-          var imageUrl = response.recipes[1].image_url;
+          var imageUrl = response.recipes[10].image_url;
 
           var test = response.recipes
 
