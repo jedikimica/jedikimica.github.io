@@ -15,7 +15,7 @@
 // }  
 // var queryURL = buildQueryURL();
 
-var queryURL = "http://food2fork.com/api/search?key=0e2e87e62bf49881c143d53640d595e9&q=shredded%20chicken";
+var queryURL = "http://food2fork.com/api/search?q=shredded%20chicken";
 
 
 console.log("---------------\nURL: " + queryURL + "\n---------------");
@@ -31,6 +31,7 @@ $.ajax({
     
     url: queryURL,
     method: "GET",
+    headers: {"key": "0e2e87e62bf49881c143d53640d595e9"}
 
   })
 
@@ -40,21 +41,25 @@ $.ajax({
        console.log(response)
 
         // Saving the image_original_url property
-          var imageUrl = response.recipes[10].image_url;
+        // var results = response.data;
+          // var imageUrl = image_url;
+          
+          
+          // // var imageUrl = "http://static.food2fork.com/Buffalo2BChicken2BGrilled2BCheese2BSandwich2B5002B4983f2702fe4.jpg";
 
-          var test = response.recipes
+          // var test = response.recipes
 
-          console.log(test)
+          // console.log("test")
           
 
-          // Creating and storing an image tag
-          var breakfastImage = $("<img>");
+          // // Creating and storing an image tag
+          // var breakfastImage = $("<img>");
 
-          // Setting the catImage src attribute to imageUrl
-          breakfastImage.attr("src", imageUrl);
-          breakfastImage.attr("alt", "breakfast image");
+          // // Setting the catImage src attribute to imageUrl
+          // breakfastImage.attr("src", imageUrl);
+          // breakfastImage.attr("alt", "breakfast image");
 
-          // Prepending the catImage to the images div
-          $("#images").prepend(breakfastImage);
+          // // Prepending the catImage to the images div
+          // $("#images").prepend(breakfastImage);
         });
       });
